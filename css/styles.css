@@ -21,6 +21,7 @@ figure {
 img {
   display: block;
 }
+/* general */
 :root {
   --blue: #2196f3;
   --grey: #757575;
@@ -47,6 +48,22 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+.color-blue {
+  color: var(--blue);
+}
+.lists {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.links {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* header-section */
 .header-border {
   border-bottom: 1px solid var(--almost-white);
 }
@@ -77,22 +94,6 @@ img {
   flex-direction: row;
   margin-left: auto;
   gap: 50px;
-}
-
-.color-blue {
-  color: var(--blue);
-}
-.lists {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-.links {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .contact-icons {
@@ -138,6 +139,7 @@ img {
   color: var(--blue);
   fill: var(--blue);
 }
+/* modal-box */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -193,15 +195,7 @@ img {
   fill: var(--white);
   background-color: var(--blue);
 }
-.article-icons-box {
-  background-color: var(--creme);
-  border-radius: 4px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 25px 0;
-}
-
+/* banner */
 .banner {
   background-image: linear-gradient(
       0deg,
@@ -238,6 +232,15 @@ img {
   letter-spacing: 0.06em;
   padding: 10px 41px;
 }
+/* article-section */
+.article-icons-box {
+  background-color: var(--creme);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
 .article-title {
   font-weight: 700;
   font-size: 14px;
@@ -269,7 +272,7 @@ img {
   text-align: center;
   padding-bottom: 50px;
 }
-
+/* what-do-we-do-section */
 .overlay {
   position: relative;
 }
@@ -288,7 +291,10 @@ img {
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
-
+/* team-section */
+.team-background {
+  background-color: var(--creme);
+}
 .team-cards {
   background: var(--white);
   /* material shadow v1 */
@@ -315,6 +321,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey);
 }
+/* icons */
 .icons-box {
   display: flex;
   flex-direction: row;
@@ -347,6 +354,7 @@ img {
   background-color: var(--blue);
   border-radius: 50%;
 }
+/* clients-section */
 .clients-icons-item {
   fill: var(--icons-color);
   border: 1px solid var(--icons-color);
@@ -366,6 +374,7 @@ img {
   border-radius: 4px;
   border: 1px solid var(--blue);
 }
+/* portfolio */
 .portfolio-button {
   font-weight: 500;
   font-size: 16px;
@@ -455,9 +464,6 @@ img {
 .portfolio-cards-item:hover .portfolio-cards-overlay {
   transform: translateY(0);
 }
-.team-background {
-  background-color: var(--creme);
-}
 
 .title-cards {
   font-weight: 700;
@@ -471,6 +477,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey);
 }
+/* footer */
 .footer-background {
   background-color: var(--dark-grey);
 }
