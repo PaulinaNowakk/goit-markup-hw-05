@@ -21,6 +21,17 @@ figure {
 img {
   display: block;
 }
+:root {
+  --blue: #2196f3;
+  --grey: #757575;
+  --black: #000;
+  --dark-grey: #2f303a;
+  --white: #fff;
+  --creme: #f5f4fa;
+  --almost-white: #ececec;
+  --border-color: #eeeeee;
+  --icons-color: #afb1b8;
+}
 .wrapper {
   width: 1600px;
   margin: 0 auto;
@@ -67,17 +78,7 @@ img {
   margin-left: auto;
   gap: 50px;
 }
-:root {
-  --blue: #2196f3;
-  --grey: #757575;
-  --black: #000;
-  --dark-grey: #2f303a;
-  --white: #fff;
-  --creme: #f5f4fa;
-  --almost-white: #ececec;
-  --border-color: #eeeeee;
-  --icons-color: #afb1b8;
-}
+
 .color-blue {
   color: var(--blue);
 }
@@ -186,6 +187,11 @@ img {
   border-style: none;
   background-color: var(--white);
   position: absolute;
+}
+.button-close:hover,
+.button-svg:hover {
+  fill: var(--white);
+  background-color: var(--blue);
 }
 .article-icons-box {
   background-color: var(--creme);
