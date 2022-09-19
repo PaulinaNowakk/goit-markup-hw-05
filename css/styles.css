@@ -69,7 +69,7 @@ img {
 }
 .header-box {
   display: flex;
-  flex: row;
+  flex-direction: row;
   align-items: center;
   gap: 93px;
   padding: 24px 15px 25px 15px;
@@ -263,9 +263,7 @@ img {
 }
 .article-item {
   color: var(--grey);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  width: 270px;
 }
 .text-color {
   color: var(--white);
